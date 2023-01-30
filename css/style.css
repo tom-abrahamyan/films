@@ -1,0 +1,454 @@
+@font-face{font-family:gotham pro;font-style:normal;font-weight:400;src:local('Gotham Pro'),url(https://fonts.cdnfonts.com/s/12664/GothaProReg.woff) format('woff')}@font-face{font-family:gotham pro;font-style:normal;font-weight:400;src:local('Gotham Pro'),url(https://fonts.cdnfonts.com/s/12664/GothaProBla.woff) format('woff')}@font-face{font-family:gotham pro;font-style:normal;font-weight:400;src:local('Gotham Pro'),url(https://fonts.cdnfonts.com/s/12664/GothaProLig.woff) format('woff')}@font-face{font-family:gotham pro;font-style:normal;font-weight:400;src:local('Gotham Pro'),url(https://fonts.cdnfonts.com/s/12664/GothaProMed.woff) format('woff')}@font-face{font-family:gotham pro;font-style:italic;font-weight:400;src:local('Gotham Pro'),url(https://fonts.cdnfonts.com/s/12664/GothaProLigIta.woff) format('woff')}@font-face{font-family:gotham pro;font-style:normal;font-weight:700;src:local('Gotham Pro'),url(https://fonts.cdnfonts.com/s/12664/GothaProBol.woff) format('woff')}@font-face{font-family:gotham pro medium;font-style:italic;font-weight:500;src:local('Gotham Pro Medium'),url(https://fonts.cdnfonts.com/s/12664/GothamProMediumItalic.woff) format('woff')}
+/* -------------------------------------------------- */
+
+/* -------------------Fonts------------------------------- */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gotham Pro', 'Arial';
+    
+}
+
+
+main.dark{ 
+    background-color: rgba(0, 0, 0, 0.8) !important;
+} 
+.swiper-btn.dark{
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    color: black !important;
+}
+.item-img.dark,.genre.dark,.plus.dark{
+    opacity: .3 !important;
+}
+
+/* header */
+
+header{
+ 
+    width: 100%;
+    height: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* navbar */
+
+header>nav ,footer> nav{
+    max-width: 1500px;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* logo */
+
+header>nav>.logo ,footer> nav > .logo{
+    cursor: pointer;
+}
+
+header>nav>.logo>a, footer>nav>.logo>a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 28.71px;
+    color: #111111;
+}
+
+/* menu */
+
+
+header>nav>menu,footer>nav>menu  {
+
+
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header>nav>menu>li>a , footer>nav>menu>li>a {
+    text-decoration: none;
+    color: #111111;
+    font-size: 18px;
+}
+
+header>nav>menu>li, footer>nav>menu>li{
+
+
+    list-style: none;
+    transition: .2s ease-in;
+}
+
+header>nav>menu>li:hover ,footer>nav>menu>li:hover {
+    border-bottom: 3px solid #111111;
+}
+
+
+/* searchbox */
+
+header>nav>.search-box , footer>nav>.search-box{
+    /* margin in 1920px */
+
+
+    max-width: 389px;
+    width: auto;
+    height:auto;
+    background: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+header>nav>.search-box>input, footer>nav>.search-box>input {
+    width: 250px;
+    height: 50px;
+    background: #F4F4F4;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+header>nav>.search-box>input::placeholder ,footer>nav>.search-box>input::placeholder {
+    padding-left: 20px;
+    font-size: 18px;
+    width: 143px;
+
+}
+
+header>nav>.search-box>button,footer>nav>.search-box>button {
+
+    border: none;
+    cursor: pointer;
+}
+
+header>nav>.search-box>button>i, footer>nav>.search-box>button>i{
+    display: block;
+    font-size: 21px;
+    margin-right: 19px;
+}
+
+
+
+/* main */
+
+main {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main>.actual-now , main >.top-serials,  main>.top-films{
+    width: 90%;
+    margin-top: 30.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+}
+main>.actual-now>h1 , main>.top-serials>h1,  main>.top-films>h1  {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 22.97px;
+    color:#111111;
+}
+
+main>.actual-now>.items ,main>.top-serials>.items, main>.top-films>.items  {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main>.actual-now>.items>.item , main>.top-serials>.items>.item,  main>.top-films>.items>.item  {
+    position: relative;
+    height: 190px;
+    width: 230px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.item:hover {
+   transform: scale(1.1);
+}
+
+main>.actual-now>.items>.item>img , main>.top-serials>.items>.item>img ,  main>.top-films>.items>.item>img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+main>.actual-now>.items>.item>.plus, main>.top-serials>.items>.item>.plus ,  main>.top-films>.items>.item>.plus  {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 25px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color:#fff;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%);
+    backdrop-filter: blur(2px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 4px;
+}
+
+main>.actual-now>.items>.item>h3, main>.top-serials>.items>.item>h3, main>.top-films>.items>.item>h3{
+    margin-top: 18px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#111111;
+}
+
+main>.actual-now>.items>.item>p, main>.top-serials>.items>.item>p,  main>.top-films>.items>.item>p{
+    margin-top: 11px;
+    color:#aaaa;
+}
+
+/* footer */
+
+footer{
+    border-top: 1px solid #F4F4F4;
+    padding-top: 13px;
+    margin-top: 40px;
+    max-width: 1920px;
+    width: 100%;
+    height: 119px;
+    display: flex;
+    justify-content: center;
+}
+
+footer> nav{
+    width: 95%;
+    flex-wrap: wrap;
+}
+
+footer> nav > .social-media{
+    width: 152px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+footer> nav > .social-media>a{
+    text-decoration: none;
+}
+footer> nav > .social-media>a>div{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .3s ease-in;
+    opacity: .7;
+}
+
+footer> nav > .social-media>a>div>img,footer>nav>.logo-and-icons>.social-media>div> img{
+    width: 14px;
+    height: 10px;
+}
+
+
+
+footer> nav > .social-media>a> .vk, footer>nav>.logo-and-icons>.social-media>a> .vk{
+    background:#2683EE;
+}
+
+footer> nav > .social-media>a> .youtube,footer>nav>.logo-and-icons>.social-media>a> .youtube{
+    background:#FF0000;
+}
+
+footer> nav > .social-media>a> .youtube > img,footer>nav>.logo-and-icons>.social-media>a> .youtube>img{
+    width: 17px;
+    height: 14px;
+}
+
+footer> nav > .social-media>a> .telegram,footer>nav>.logo-and-icons>.social-media>a> .telegram{
+    background:#279FDA;
+}
+
+footer>nav>menu  {
+    width: 25%;
+    flex-wrap: wrap;
+}
+
+footer>nav>.logo-and-icons{
+    display: none;
+}
+
+/* ------------------------------------------------------- */
+
+/* mobile-nav */
+
+.mobile-menu{
+    position: absolute;
+    top:77px;
+    transform: translateX(-150%);
+    padding: 32px;
+    width: 50%;
+    height: 400px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 111;
+    background: #fff;
+    transition: .4s ease;
+}
+
+.mobile-menu.show{
+    transform: translateX(0);
+}
+
+
+.mobile-menu>menu{
+
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.mobile-menu>menu>li>a{
+    text-decoration: none;
+    color: #111111;
+    font-size: 18px;
+}
+
+.mobile-menu>menu>li{
+    list-style: none;
+    transition: .2s ease-in;
+}
+
+.mobile-menu>menu>li:hover{
+    border-bottom: 3px solid #111111;
+}
+
+
+/* searchbox */
+
+.search-box-mobile{
+    position: absolute;
+    z-index: 11111;
+    margin: 0 auto;
+   
+    transform: translateY(-220%);
+    
+    transition: .3s ease;
+    width: 100% !important;
+    height:auto;
+    background: #F4F4F4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.search-box-mobile.open{
+ 
+    transform: translateY(-85%);
+ 
+}
+
+.search-box-mobile>input{
+    width: 90%;
+    height: 70px;
+    background: #F4F4F4;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.search-box-mobile>input::placeholder{
+    padding-left: 20px;
+    font-size: 15px;
+    width: 143px;
+
+}
+
+.search-box-mobile>button{
+    border: none;
+    cursor: pointer;
+}
+
+.search-box-mobile>button>i{
+    display: block;
+    font-size: 23px;
+    margin-right: 9px;
+}
+
+
+/* burger btn */
+
+.burger-btn {
+    width: 40px;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+/* search-btn */
+
+.search-btn{
+    width: 40px;
+    height: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    border:none;
+    font-size: 25px;
+ 
+    cursor: pointer;
+}

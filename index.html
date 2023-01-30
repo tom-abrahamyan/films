@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/sliderDesign.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="burger-btn">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="logo"><a href="index.html">НАЗВАНИЕ</a></div>
+            <menu>
+                <li><a href="#">Фильмы</a></li>
+                <li><a href="#">Сериалы</a></li>
+                <li><a href="#">Мультфильмы</a></li>
+                <li><a href="#">Телешоу</a></li>
+                <li><a href="#">Другое</a></li>
+            </menu>
+            <div class="search-box">
+                <input type="search" placeholder="Поиск по сайту">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <button class="search-btn" onclick="openSearchBox()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+
+
+        </nav>
+    </header>
+
+    <div class="mobile-menu">
+
+        <menu>
+            <li><a href="#">Фильмы</a></li>
+            <li><a href="#">Сериалы</a></li>
+            <li><a href="#">Мультфильмы</a></li>
+            <li><a href="#">Телешоу</a></li>
+            <li><a href="#">Другое</a></li>
+        </menu>
+
+    </div>
+
+    <div class="search-box-mobile">
+        <input type="search" placeholder="Поиск по сайту">
+        <button onclick="closeSearchBox()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+    <main>
+        <!-- Slider -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="slide-img" src="images/slider3.jpg" />
+                    <div class="content">
+                        <h1>Title</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eligendi.</p>
+                        <p><span>18+</span><span>Fantastic</span></p>
+                    </div>
+                </div>
+                <div class="swiper-slide"> 
+                    <img class="slide-img" src="images/slider2.jpg" />
+                    <div class="content">
+                        <h1>Title</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eligendi.</p>
+                        <p><span>18+</span><span>Fantastic</span></p>
+                    </div>
+                </div>
+                <div class="swiper-slide"> 
+                    <img class="slide-img" src="images/slider2.jpg" />
+                    <div class="content">
+                        <h1>Title</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eligendi.</p>
+                        <p><span>18+</span><span>Fantastic</span></p>
+                    </div>
+                </div>
+                <div class="swiper-slide"> 
+                    <img class="slide-img" src="images/slider2.jpg" />
+                    <div class="content">
+                        <h1>Title</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eligendi.</p>
+                        <p><span>18+</span><span>Fantastic</span></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next swiper-btn"></div>
+            <div class="swiper-button-prev swiper-btn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="actual-now">
+            <h3>Актуально сейчас <i class="fa-solid fa-chevron-right"></i></h3>
+            <div class="actual-items items">
+                <div class="actual-item item">
+                    <div class="plus">18+</div>
+                    <img class="item-img" src="images/item1.png" alt="">
+                    <h3>Узники страны призраков</h3>
+                    <p class="genre">Фантастика, Боевик</p>
+                </div>
+                <div class="actual-item item">
+                    <div class="plus">18+</div>
+                    <img class="item-img" src="images/item2.png" alt="">
+                    <h3>Вышка</h3>
+                    <p class="genre">Триллеры, Драма</p>
+                </div>
+                <div class="actual-item item">
+                    <div class="plus">6+</div>
+                    <img class="item-img" src="images/item3.png" alt="">
+                    <h3>Монстры на каникулах</h3>
+                    <p class="genre">Мультфильм, Комедия, Семейный</p>
+                </div>
+                <div class="actual-item item">
+                    <div class="plus">18+</div>
+                    <img class="item-img" src="images/item1.png" alt="">
+                    <h3>Узники страны призраков</h3>
+                    <p class="genre">Фантастика, Боевик</p>
+                </div>
+                <div class="actual-item item">
+                    <div class="plus">18+</div>
+                    <img class="item-img" src="images/item2.png" alt="">
+                    <h3>Узники страны призраков</h3>
+                    <p class="genre">Фантастика, Боевик</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-serials">
+            <h3>Лучшие сериалы <i class="fa-solid fa-chevron-right"></i></h3>
+            <div class="actual-items items">
+                <div class="actual-item item">
+                    <div class="plus">18+</div>
+                    <img class="item-img" src="images/item1.png" alt="">
+                    <h3>Узники страны призраков</h3>
+                    <p class="genre">Фантастика, Боевик</p>
+                </div>
+                <div class="actual-item item">
+                    <div class="plus">18+</div>
+                    <img class="item-img" src="images/item2.png" alt="">
+                    <h3>Вышка</h3>
+                    <p class="genre">Триллеры, Драма</p>
+                </div>
+                <div class="actual-item item">
+                    <div class="plus">6+</div>
+                    <img class="item-img" src="images/item3.png" alt="">
+                    <h3>Монстры на каникулах</h3>
+                    <p class="genre">Мультфильм, Комедия, Семейный</p>
+                </div>
+                <div class="actual-item item">
+                    <div class="plus">18+</div>
+                    <img class="item-img" src="images/item1.png" alt="">
+                    <h3>Узники страны призраков</h3>
+                    <p class="genre">Фантастика, Боевик</p>
+                </div>
+                <div class="actual-item item">
+                    <div class="plus">18+</div>
+                    <img class="item-img" src="images/item2.png" alt="">
+                    <h3>Узники страны призраков</h3>
+                    <p class="genre">Фантастика, Боевик</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-films">
+            <h3>Лучшие фильмы <i class="fa-solid fa-chevron-right"></i></h3>
+            <div class="actual-items items">
+                <div class="actual-item item">
+                    <div class="plus">18+</div>
+                    <img class="item-img" src="images/item1.png" alt="">
+                    <h3>Узники страны призраков</h3>
+                    <p class="genre">Фантастика, Боевик</p>
+                </div>
+                <div class="actual-item item">
+                    <div class="plus">18+</div>
+                    <img class="item-img" src="images/item2.png" alt="">
+                    <h3>Вышка</h3>
+                    <p class="genre">Триллеры, Драма</p>
+                </div>
+                <div class="actual-item item">
+                    <div class="plus">6+</div>
+                    <img class="item-img" src="images/item3.png" alt="">
+                    <h3>Монстры на каникулах</h3>
+                    <p class="genre">Мультфильм, Комедия, Семейный</p>
+                </div>
+                <div class="actual-item item">
+                    <div class="plus">18+</div>
+                    <img class="item-img" src="images/item1.png" alt="">
+                    <h3>Узники страны призраков</h3>
+                    <p class="genre">Фантастика, Боевик</p>
+                </div>
+                <div class="actual-item item">
+                    <div class="plus">18+</div>
+                    <img class="item-img" src="images/item2.png" alt="">
+                    <h3>Узники страны призраков</h3>
+                    <p class="genre">Фантастика, Боевик</p>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <nav>
+            <div class="logo"><a href="index.html">НАЗВАНИЕ</a></div>
+            <menu>
+                <li><a href="#">Реклама</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </menu>
+            <div class="social-media">
+                <a href="#">
+                    <div class="vk"><img src="images/Vector (2).png" alt=""></div>
+                </a>
+                <a href="#">
+                    <div class="youtube"><img src="images/Vector (1).png" alt=""></div>
+                </a>
+                <a href="#">
+                    <div class="telegram"><img src="images/Vector.png" alt=""></div>
+                </a>
+            </div>
+            <div class="search-box">
+                <input type="search" placeholder="Поиск по сайту">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <div class="logo-and-icons">
+                <div class="logo"><a href="index.html">НАЗВАНИЕ</a></div>
+                <div class="social-media">
+                    <a href="#">
+                        <div class="vk"><img src="images/Vector (2).png" alt=""></div>
+                    </a>
+                    <a href="#">
+                        <div class="youtube"><img src="images/Vector (1).png" alt=""></div>
+                    </a>
+                    <a href="#">
+                        <div class="telegram"><img src="images/Vector.png" alt=""></div>
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+    </footer>
+
+
+
+
+    <!-- slider script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- my scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,399 @@
+@media only screen and (min-width: 1919px) {
+
+    header,
+    footer {
+        width: 100%;
+
+    }
+
+
+    /* navbar */
+
+    header>nav,
+    footer>nav {
+        max-width: 1500px;
+    }
+
+    /* logo */
+
+    header>nav>.logo,
+    footer>nav>.logo {
+        max-width: 178px;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 28.71px;
+    }
+
+    /* menu */
+
+
+    header>nav>menu,
+    footer>nav>menu {
+        margin-left: 150px;
+        max-width: 659px;
+    }
+
+    header>nav>menu>li,
+    footer>nav>menu>li {
+        margin: 0 15px;
+        padding: 10px;
+        line-height: 17.23px;
+    }
+
+    header>nav>menu>li>a,
+    footer>nav>menu>li>a {
+        font-size: 15px;
+    }
+
+    /* searchbox */
+
+    header>nav>.search-box,
+    footer>nav>.search-box {
+        max-width: 389px;
+        margin-left: 144px;
+    }
+
+    header>nav>.search-box>input,
+    footer>nav>.search-box>input {
+        width: 320px;
+    }
+
+    header>nav>.search-box>input::placeholder,
+    footer>nav>.search-box>input::placeholder {
+        font-size: 15px;
+    }
+
+    /* main */
+
+    main {
+        max-width: 1920px;
+
+    }
+
+    /* main>.actual-now,
+    main>.top-films,
+    main>.top-serials {
+      
+    } */
+
+
+    main>.actual-now,
+    main>.top-serials,
+    main>.top-films {
+
+        margin-top: 30.5px;
+
+    }
+
+
+
+    main>.actual-now>.items,
+    main>.top-serials>.items,
+    main>.top-films>.items {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        display: flex;
+        gap: 20px;
+        /* overflow-x: scroll; */
+        align-items: center;
+    }
+
+    main>.actual-now>.items>.item,
+    main>.top-serials>.items>.item,
+    main>.top-films>.items>.item {
+        position: relative;
+        height: 220px;
+        width: 284px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    main>.actual-now>.items>.item>img,
+    main>.top-serials>.items>.item>img,
+    main>.top-films>.items>.item>img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    main>.actual-now>.items>.item>.plus,
+    main>.top-serials>.items>.item>.plus,
+    main>.top-films>.items>.item>.plus {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        width: 25px;
+        height: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 10px;
+        color: #fff;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%);
+        backdrop-filter: blur(2px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 4px;
+    }
+
+    main>.actual-now>.items>.item>h3,
+    main>.top-serials>.items>.item>h3,
+    main>.top-films>.items>.item>h3 {
+        margin-top: 18px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #111111;
+    }
+
+    main>.actual-now>.items>.item>p,
+    main>.top-serials>.items>.item>p,
+    main>.top-films>.items>.item>p {
+        margin-top: 12px;
+        color: #aaaa;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+
+    /* searchbox */
+
+    header>nav>.search-box,
+    footer>nav>.search-box {
+        /* margin in 1920px */
+
+        height: auto;
+    }
+
+    header>nav>.search-box>input,
+    footer>nav>.search-box>input {
+        width: 200px;
+        height: 50px;
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+    header>nav>.search-box>input::placeholder,
+    footer>nav>.search-box>input::placeholder {
+        font-size: 15px;
+        width: 123px;
+    }
+
+    header>nav>.search-box>button>i,
+    footer>nav>.search-box>button>i {
+        font-size: 21px;
+        margin-right: 15px;
+    }
+
+    header>nav>menu>li,
+    footer>nav>menu>li {
+        margin: 0 3px;
+        padding: 5px;
+        line-height: 15px;
+    }
+
+    header>nav>menu>li>a,
+    footer>nav>menu>li>a {
+        font-size: 14px;
+    }
+
+    header>nav>.logo>a,
+    footer>nav>.logo>a {
+        max-width: 128px;
+        font-size: 20px;
+        font-weight: 400;
+
+    }
+
+    main>.actual-now>.items>.item,
+    main>.top-serials>.items>.item,
+    main>.top-films>.items>.item {
+        margin-bottom: 25px;
+    }
+
+}
+
+@media screen and (max-width:868px) {
+    header>nav{
+        width: 88%;
+        display: flex;
+        justify-content: space-between;
+    }
+    main {
+        margin-top: 14px;
+    }
+
+    header>nav>menu {
+        display: none;
+    }
+
+    header>nav>.search-box {
+        display: none;
+    }
+
+    .burger-btn {
+        display: flex;
+    }
+
+    .search-btn {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .mobile-menu {
+        width: 100%;
+    }
+
+
+
+    /* footer */
+
+    footer {
+        width: 100%;
+        height: auto;
+    }
+
+    footer>nav {
+
+        width: 100%;
+        gap: 15px 0;
+        flex-direction: column !important;
+    }
+
+    footer>nav>menu {
+        order: 1;
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    footer>nav>menu>li>a {
+        font-size: 18px;
+    }
+
+    footer>nav>.search-box {
+        order: 2;
+        width: 85% !important;
+    }
+
+    footer>nav>.search-box>input {
+        width: 80% !important;
+    }
+
+    footer>nav>.logo {
+        display: none !important;
+    }
+
+    footer>nav>.social-media {
+        display: none;
+    }
+
+
+
+    footer>nav>.logo-and-icons {
+        margin: 26px 0;
+        order: 4;
+        display: flex !important;
+        justify-content: space-between;
+        width: 85%;
+    }
+
+    footer>nav>.logo-and-icons>.social-media {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    footer>nav>.logo-and-icons>.social-media>a>div {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    footer>nav>.logo-and-icons>.logo>a {
+
+        text-decoration: none;
+        color: #111111;
+        width: 50%;
+        font-size: 24px !important;
+        font-weight: bold;
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width:530px) {
+
+    main>.actual-now>h1,
+    main>.top-serials>h1,
+    main>.top-films>h1 {
+        font-size: 16px;
+
+    }
+
+    main>.actual-now>.items,
+    main>.top-serials>.items,
+    main>.top-films>.items {
+        margin: 14px 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    main>.actual-now>.items>.item,
+    main>.top-serials>.items>.item,
+    main>.top-films>.items>.item {
+        width: 146px;
+        height: 143px;
+    }
+
+    main>.actual-now>.items>.item>h3,
+    main>.top-serials>.items>.item>h3,
+    main>.top-films>.items>.item>h3 {
+        font-size: 13px;
+        line-height: 18.2px;
+        font-weight: 400;
+    }
+
+    main>.actual-now>.items>.item>p,
+    main>.top-serials>.items>.item>p,
+    main>.top-films>.items>.item>p {
+        font-size: 12px;
+    }
+
+    main>.actual-now>.items>.item:nth-child(3),
+    main>.actual-now>.items>.item:nth-child(4),
+    main>.actual-now>.items>.item:nth-child(5),
+    main>.top-serials>.items>.item:nth-child(3),
+    main>.top-serials>.items>.item:nth-child(4),
+    main>.top-serials>.items>.item:nth-child(5),
+    main>.top-films>.items>.item:nth-child(3),
+    main>.top-films>.items>.item:nth-child(4),
+    main>.top-films>.items>.item:nth-child(5) {
+        display: none;
+    }
+
+    footer>nav>.social-media {
+        order: 4;
+        width: 80%;
+        margin-bottom: 15px;
+    }
+}
